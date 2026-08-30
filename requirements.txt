@@ -1,0 +1,32 @@
+# === ES98C — corrosion-data extraction pipeline ===
+# Python 3.10+
+
+# Scientific computing
+numpy
+pandas
+scikit-learn
+matplotlib
+
+# PDF processing
+pypdf
+pdfplumber
+PyMuPDF          # imported as `fitz`
+pdf2image
+
+# Image processing
+opencv-python    # imported as `cv2`
+Pillow
+
+# HTTP (Ollama / VLM calls)
+requests
+
+# Deep learning — torch/torchvision versions must match mmcv-full (see below).
+# On a CUDA machine use the cu117 wheel:
+#   pip install torch==1.13.1 torchvision==0.14.1 --index-url https://download.pytorch.org/whl/cu117
+torch==1.13.1
+torchvision==0.14.1
+transformers     # TrOCR (legacy fallback, no longer the primary OCR)
+
+# OpenMMLab — on Windows there is no CUDA wheel, install the CPU-only build:
+#   pip install mmcv-full==1.7.2 -f https://download.openmmlab.com/mmcv/dist/cpu/torch1.13/index.html
+mmcv-full==1.7.2
