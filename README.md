@@ -14,11 +14,11 @@ corrosion current density across material systems.
 - `data_cleaner/` — Butler–Volmer-based outlier rejection and global cleaning.
 - `page_analyzer/` — page-level VLM analysis and Tafel-panel cropping.
 - `modeling/model.py` — k-means clustering + RF/GB regression + feature ablation.
-- `mkreports/` — figure-generation scripts (workflow diagrams, results figures).
 - `chart_extractor/` — chart-curve extraction (LineFormer + ChartDete + VLM OCR),
   adapted from
   [extract-line-chart-data](https://github.com/tdsone/extract-line-chart-data).
-- `cleaned_data.csv` — the modelling dataset (147 records).
+  You need to set up the local environment according to the instructions on this page.
+- `cleaned_data.csv` — the modelling dataset.
 
 ## Installation
 
@@ -56,7 +56,7 @@ python project_v2.py
 The pipeline reads PDFs from `source_papers/` and writes
 `extracted_data_text.csv` and `extracted_data_image.csv`.
 
-## Validation paper
+## Validation paper (If you want to test the pipeline):
 
 The end-to-end example used throughout the project is:
 
